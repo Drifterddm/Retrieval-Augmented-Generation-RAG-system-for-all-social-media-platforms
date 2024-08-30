@@ -1,0 +1,28 @@
+Create a .env file in the root directory with your API keys:
+
+plaintext
+Copy code
+TWITTER_BEARER_TOKEN=your_twitter_bearer_token
+FACEBOOK_ACCESS_TOKEN=your_facebook_access_token
+INSTAGRAM_ACCESS_TOKEN=your_instagram_access_token
+Update the fetch_* scripts with the necessary authentication details.
+
+Usage
+Run the main.py script to start the RAG system:
+
+bash
+Copy code
+python main.py
+The script will fetch data from configured platforms, perform retrieval, and generate responses based on your queries.
+
+Example
+To test the system with a sample query:
+
+python
+Copy code
+from main import rag
+
+query = "What are people saying about the new Spider-Man movie?"
+response = rag(query)
+print(f"Query: {query}")
+print(f"Response: {response}")
