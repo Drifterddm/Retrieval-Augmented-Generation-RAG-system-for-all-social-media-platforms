@@ -1,0 +1,5 @@
+Create a .env file in the root directory with your API keys:
+
+TWITTER_BEARER_TOKEN=your_twitter_bearer_token
+FACEBOOK_ACCESS_TOKEN=your_facebook_access_token
+INSTAGRAM_ACCESS_TOKEN=your_instagram_access_token
